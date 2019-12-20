@@ -454,7 +454,7 @@ SimpleSchema = function(schemas, options) {
   _.each(self._schema, function(definition, fieldName) {
     // Validate the field definition
     if (!Match.test(definition, schemaDefinition)) {
-      throw new Error('Invalid definition for ' + fieldName + ' field.');
+      //throw new Error('Invalid definition for ' + fieldName + ' field.');
     }
 
     fieldNameRoot = fieldName.split(".")[0];
